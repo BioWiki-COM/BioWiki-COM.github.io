@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ray Kroc - BioWiki</title>
+    <link rel="icon" href="logo.png">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: #f9fafb;
+            color: #202124;
+        }
+        
+        header {
+            background-color: #ffffff;
+            padding: 30px;
+            text-align: center;
+            border-bottom: 2px solid #dcdcdc;
+            font-size: 1.8em;
+            font-weight: bold;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        nav {
+            background: #e9ecef;
+            padding: 15px;
+            margin: 20px auto;
+            border: 1px solid #ced4da;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        nav h2 {
+            margin: 0 0 10px 0;
+            font-size: 22px;
+            color: #343a40;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        nav ul li {
+            margin: 5px 0;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.2s;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+        
+        nav a:hover {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #007bff;
+            transform: scale(1.1);
+        }
+        
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 30px;
+            background: white;
+            border: 1px solid #ced4da;
+            border-radius: 8px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        h2 {
+            border-bottom: 3px solid #ced4da;
+            padding-bottom: 10px;
+            color: #343a40;
+            font-size: 2em;
+            text-align: center;
+        }
+        
+        .profile-img {
+            width: 100%;
+            max-width: 320px;
+            display: block;
+            margin: 15px auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        
+        .profile-img:hover {
+            transform: scale(1.05);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #e9ecef;
+            border-top: 2px solid #dcdcdc;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #555;
+            box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .infocompleta {
+            color: #3498db;
+            text-align: center;
+            font-family: monospace;
+        }
+
+        #downloadBtn {
+            color: #3498db;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border: #3498db solid 3px;
+            height: 80px;
+            width: 250px;
+            border-radius: 10px;
+            font-size: 50px;
+            background: white;
+            transition: 0.3s linear;
+        }
+
+        #downloadBtn:hover {
+            scale: 0.9;
+            cursor: pointer;
+            background: #ced4da;
+        }
+
+        .buttondownload {
+            text-align: center;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const links = document.querySelectorAll("nav a");
+            links.forEach(link => {
+                link.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    targetElement.scrollIntoView({ behavior: "smooth" });
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" style="text-decoration: none; color: #3498db; position: absolute; top: 10px; left: 20px; font-size: 18px;">BioWiki</a></h1>
+        <h2>Ray Kroc</h2>
+        <p>De BioWiki, la enciclopedia de biografías</p>
+    </header>
+    
+    <nav>
+        <h2>Índice</h2>
+        <ul>
+            <li><a href="#biografia">Biografía</a></li>
+            <li><a href="#trayectoria">Trayectoria</a></li>
+            <li><a href="#impacto">Impacto</a></li>
+        </ul>
+    </nav>
+    
+    <section id="biografia">
+        <h2>Biografía</h2>
+        <img src="img/raykroc.jpg" alt="Ray Kroc" class="profile-img">
+        <p><strong>Nombre completo:</strong> Raymond Albert Kroc</p>
+        <p><strong>Fecha de nacimiento:</strong> 5 de octubre de 1902</p>
+        <p><strong>Fecha de fallecimiento:</strong> 14 de enero de 1984</p>
+        <p><strong>Nacionalidad:</strong> Estadounidense</p>
+        <p>Ray Kroc fue un empresario estadounidense conocido por expandir McDonald's y convertirlo en la cadena de comida rápida más grande del mundo.</p>
+    </section>
+    
+    <section id="trayectoria">
+        <h2>Trayectoria y Carrera</h2>
+        <p>Antes de McDonald's, Kroc trabajó como vendedor de batidoras de leche. En 1954, descubrió el restaurante de los hermanos McDonald y vio el potencial de su sistema de servicio rápido.</p>
+        <p>En 1955, fundó McDonald's Corporation y comenzó a franquiciar la marca, estableciendo estándares que llevaron al éxito global de la empresa.</p>
+    </section>
+    
+    <section id="impacto">
+        <h2>Impacto y Legado</h2>
+        <p>Ray Kroc transformó la industria de la comida rápida, estableciendo prácticas empresariales que hoy en día siguen siendo utilizadas por cadenas de todo el mundo.</p>
+    </section>
+    <div class="buttondownload">
+        <h1 class="infocompleta">Información Completa</h1>
+        <button id="downloadBtn">Descargar</button>
+        </div>
+    <script>
+        document.getElementById("downloadBtn").addEventListener("click", function () {
+            const contenido = `BioWiki
+==========================
+Ray Kroc
+De BioWiki, la enciclopedia de biografías
+    
+Nombre completo: Raymond Albert Kroc
+Fecha de nacimiento: 5 de octubre de 1902
+Nacionalidad: Estadounidense
+Ocupación: Empresario, franquiciador
+Empresa: McDonald's Corporation
+Años activo: 1954 - 1984
+    
+Biografía:
+Ray Kroc nació el 5 de octubre de 1902 en Oak Park, Illinois, EE.UU. Antes de convertirse en el cerebro detrás de la expansión de McDonald's, trabajó como vendedor de máquinas para hacer malteadas. Su espíritu emprendedor y visión de negocios lo llevaron a transformar un pequeño restaurante en la cadena de comida rápida más grande del mundo.
+    
+Trayectoria y Carrera:
+En 1954, Kroc conoció a los hermanos Richard y Maurice McDonald, quienes operaban un restaurante de hamburguesas en San Bernardino, California. Viendo su potencial, se ofreció a franquiciar el negocio y, en 1955, fundó McDonald's Corporation. Bajo su liderazgo, McDonald's creció rápidamente, estableciendo un modelo de franquicia eficiente y estandarizado. En 1961, Kroc compró la empresa a los hermanos McDonald por 2.7 millones de dólares.
+    
+Impacto y Logros:
+Kroc convirtió a McDonald's en un símbolo global de la comida rápida. Su enfoque en la eficiencia, consistencia y expansión agresiva revolucionó la industria. Para 1984, año de su fallecimiento, McDonald's tenía más de 7,500 restaurantes en todo el mundo.
+    
+Momentos Destacados:
+- Fundación de McDonald's Corporation en 1955.
+- Compra de la empresa a los hermanos McDonald en 1961.
+- Expansión internacional de McDonald's en los años 70.
+- Creación del "Hamburger University" para capacitar a empleados y franquiciados.
+    
+Frases Icónicas:
+- "La calidad, el servicio, la limpieza y el valor son nuestros principios fundamentales."
+- "Ninguno de nosotros es tan bueno como todos nosotros juntos."
+- "Si tienes tiempo para limpiar, tienes tiempo para vender."
+    
+Curiosidades:
+- Ray Kroc sirvió en la Cruz Roja durante la Primera Guerra Mundial junto a Walt Disney.
+- En 1974, compró el equipo de béisbol San Diego Padres.
+- Su historia fue llevada al cine en la película "The Founder" (2016).
+    
+Redes Sociales:
+- McDonald's: https://www.mcdonalds.com/
+    
+Artículo basado en información pública. BioWiki no tiene afiliación con Ray Kroc.`;
+    
+            const blob = new Blob([contenido.replace(/\n/g, "\r\n")], { type: "text/plain" });
+            const a = document.createElement("a");
+            a.href = URL.createObjectURL(blob);
+            a.download = "RayKroc_BioWiki.txt";
+            a.click();
+        });
+    </script>
+    
+    <footer>
+        <p>Artículo basado en información pública. BioWiki no tiene afiliación con Ray Kroc.</p>
+    </footer>
+</body>
+</html>

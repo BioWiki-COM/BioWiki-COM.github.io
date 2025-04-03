@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spreen - BioWiki</title>
+    <link rel="icon" href="logo.png">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: #f9fafb;
+            color: #202124;
+        }
+        
+        header {
+            background-color: #ffffff;
+            padding: 30px;
+            text-align: center;
+            border-bottom: 2px solid #dcdcdc;
+            font-size: 1.8em;
+            font-weight: bold;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        nav {
+            background: #e9ecef;
+            padding: 15px;
+            margin: 20px auto;
+            border: 1px solid #ced4da;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        nav h2 {
+            margin: 0 0 10px 0;
+            font-size: 22px;
+            color: #343a40;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        nav ul li {
+            margin: 5px 0;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.2s;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+        
+        nav a:hover {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #007bff;
+            transform: scale(1.1);
+        }
+        
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 30px;
+            background: white;
+            border: 1px solid #ced4da;
+            border-radius: 8px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        h2 {
+            border-bottom: 3px solid #ced4da;
+            padding-bottom: 10px;
+            color: #343a40;
+            font-size: 2em;
+            text-align: center;
+        }
+        
+        .profile-img {
+            width: 100%;
+            max-width: 320px;
+            display: block;
+            margin: 15px auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        
+        .profile-img:hover {
+            transform: scale(1.05);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #e9ecef;
+            border-top: 2px solid #dcdcdc;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #555;
+            box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .infocompleta {
+            color: #3498db;
+            text-align: center;
+            font-family: monospace;
+        }
+
+        #downloadBtn {
+            color: #3498db;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border: #3498db solid 3px;
+            height: 80px;
+            width: 250px;
+            border-radius: 10px;
+            font-size: 50px;
+            background: white;
+            transition: 0.3s linear;
+        }
+
+        #downloadBtn:hover {
+            scale: 0.9;
+            cursor: pointer;
+            background: #ced4da;
+        }
+
+        .buttondownload {
+            text-align: center;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const links = document.querySelectorAll("nav a");
+            links.forEach(link => {
+                link.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    targetElement.scrollIntoView({ behavior: "smooth" });
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" style="text-decoration: none; color: #3498db; position: absolute; top: 10px; left: 20px; font-size: 18px;">BioWiki</a></h1>
+
+        <h2>Spreen</h2>
+        <p>De BioWiki, la enciclopedia de biografías</p>
+    </header>
+    
+    <nav>
+        <h2>Índice</h2>
+        <ul>
+            <li><a href="#biografia">Biografía</a></li>
+            <li><a href="#trayectoria">Trayectoria</a></li>
+            <li><a href="#impacto">Impacto</a></li>
+        </ul>
+    </nav>
+    
+    <section id="biografia">
+        <h2>Biografía</h2>
+        <img src="img/spreen.jpg" alt="Spreen" class="profile-img">
+        <p><strong>Nombre real:</strong> Iván Buhajeruk</p>
+        <p><strong>Fecha de nacimiento:</strong> 11 de octubre de 2000</p>
+        <p><strong>Nacionalidad:</strong> Argentina</p>
+        <p>Iván Buhajeruk, mejor conocido en internet como Spreen, nació el 11 de octubre de 2000 en Argentina. Desde temprana edad, mostró interés por los videojuegos, lo que eventualmente lo llevó a convertirse en una de las figuras más influyentes del mundo gamer en habla hispana.</p>
+    </section>
+    
+    <section id="trayectoria">
+        <h2>Trayectoria y Carrera</h2>
+        <p>Spreen comenzó su carrera en YouTube alrededor de 2015, subiendo videos de juegos como Minecraft PvP y Fortnite. Con el tiempo, fue perfeccionando su estilo y personalidad en pantalla, lo que le permitió captar la atención de una audiencia cada vez mayor.</p>
+        <p>Su gran salto a la fama se dio gracias a su habilidad en Minecraft, especialmente en modos como SkyWars y BedWars, donde se destacó por su rapidez y estrategia. Más tarde, se trasladó a Twitch, donde su humor sarcástico y espontáneo lo convirtieron en una de las personalidades más populares de la plataforma.</p>
+    </section>
+    
+    <section id="impacto">
+        <h2>Impacto y Popularidad</h2>
+        <p>Con millones de seguidores en YouTube y Twitch, Spreen ha consolidado su lugar como uno de los streamers más importantes de la comunidad hispana. Ha participado en eventos como Squid Craft Games y ha colaborado con otros creadores como Quackity, AuronPlay, Rubius y El Mariana.</p>
+        <p>Su autenticidad y estilo lo han convertido en una figura clave en el mundo del gaming, atrayendo a una audiencia fiel que lo sigue en todas sus plataformas.</p>
+    </section>
+    <div class="buttondownload">
+    <h1 class="infocompleta">Información Completa</h1>
+    <button id="downloadBtn">Descargar</button>
+    </div>
+<script>
+
+    document.getElementById("downloadBtn").addEventListener("click", function () {
+        const contenido = `BioWiki
+==========================
+Spreen
+De BioWiki, la enciclopedia de biografías
+
+Nombre real: Iván Buhajeruk
+Fecha de nacimiento: 11 de octubre de 2000
+Nacionalidad: Argentina
+Ocupación: Streamer, Youtuber, creador de contenido
+Plataformas: YouTube, Twitch
+Género de contenido: Videojuegos, reacciones, entretenimiento
+Años activo: 2015 - Presente
+
+Biografía:
+Iván Buhajeruk, mejor conocido en internet como Spreen, nació el 11 de octubre de 2000 en Argentina. 
+Desde joven, mostró interés por los videojuegos y la tecnología, lo que lo llevó a explorar plataformas como YouTube y Twitch. 
+Sus primeros acercamientos a los videojuegos fueron en la infancia, jugando títulos clásicos con amigos y familiares.
+
+Desde el inicio, su personalidad destacó por ser sarcástica, energética y espontánea. 
+Esta autenticidad lo ayudó a crecer en el mundo del streaming y lo convirtió en uno de los creadores más populares en la comunidad hispana.
+
+Trayectoria y Carrera:
+Spreen comenzó su carrera en YouTube alrededor de 2015, subiendo videos de juegos como Minecraft PvP y Fortnite. 
+Con el tiempo, perfeccionó su estilo y personalidad en pantalla, lo que le permitió captar la atención de una audiencia cada vez mayor. 
+Su gran salto a la fama se dio gracias a su habilidad en Minecraft, especialmente en modos como SkyWars y BedWars, donde se destacó por su rapidez y estrategia. 
+Más tarde, se trasladó a Twitch, donde su humor sarcástico y espontáneo lo convirtió en una de las personalidades más populares de la plataforma.
+
+En 2021 y 2022, su popularidad explotó gracias a clips virales en TikTok y YouTube Shorts, donde sus reacciones y momentos épicos lograron millones de vistas. 
+Esto lo llevó a participar en eventos y series de Minecraft con grandes creadores, consolidando su lugar como una de las figuras más influyentes del gaming en habla hispana.
+
+Impacto y Comunidad:
+Con millones de seguidores en YouTube y Twitch, Spreen ha consolidado su lugar como uno de los streamers más importantes de la comunidad hispana. 
+Ha participado en eventos como Squid Craft Games y ha colaborado con otros creadores como Quackity, AuronPlay, Rubius y El Mariana. 
+Su comunidad es una de las más activas en el mundo del gaming, generando memes, clips y tendencias en redes sociales.
+
+Momentos Virales:
+- Cuando se enfrentó a otros streamers en Minecraft y los dejó sorprendidos con su habilidad.
+- Clips de sus reacciones exageradas a situaciones inesperadas en juegos.
+- Su famoso "NOOOO" en medio de partidas de terror o survival.
+- Memes creados por su comunidad que se han vuelto tendencia en redes sociales.
+
+Logros y Récords:
+- Más de 10 millones de suscriptores en YouTube.
+- Uno de los streamers más vistos en Twitch en español.
+- Ha roto récords de audiencia en eventos como Squid Craft Games.
+- Clips con más de 10 millones de vistas en TikTok.
+- Ha sido tendencia en múltiples ocasiones en Twitter y YouTube.
+
+Frases y Expresiones Icónicas:
+- "¡Qué haces, pelotudo!"
+- "Nooo, bro, no puede ser."
+- "Esto es una falta de respeto."
+- "Me están queriendo joder, boludo."
+- "Increíble pero cierto."
+
+Curiosidades:
+- Se ha convertido en uno de los streamers más influyentes de Argentina.
+- En varias ocasiones ha sido el número 1 en Twitch en audiencia hispana.
+- Ha jugado con figuras internacionales del streaming y ha sido invitado a eventos exclusivos.
+- Tiene una fuerte conexión con su comunidad, la cual lo apoya en todas sus plataformas.
+- Ha sido mencionado por grandes creadores de contenido y medios de comunicación.
+- En sus inicios, usaba nombres distintos en juegos antes de quedarse con "Spreen".
+- Ha estado en servidores privados con grandes streamers como Karmaland y Tortillaland.
+
+Eventos Destacados:
+- Squid Craft Games, donde compitió con algunos de los creadores más grandes del mundo.
+- Eventos benéficos en los que se ha recaudado dinero para causas importantes.
+- Participación en torneos internacionales de Minecraft y otras plataformas.
+
+Redes Sociales:
+- YouTube: https://www.youtube.com/c/SpreenDMC
+- Twitch: https://www.twitch.tv/spreen
+- Twitter: https://twitter.com/spreen
+
+Artículo basado en información pública. BioWiki no tiene afiliación con Spreen.`;
+
+        const blob = new Blob([contenido.replace(/\n/g, "\r\n")], { type: "text/plain" });
+        const a = document.createElement("a");
+        a.href = URL.createObjectURL(blob);
+        a.download = "Spreen_BioWiki.txt";
+        a.click();
+    });
+</script>
+    <footer>
+        <p>Artículo basado en información pública. BioWiki no tiene afiliación con Spreen.</p>
+    </footer>
+    
+</body>
+</html>

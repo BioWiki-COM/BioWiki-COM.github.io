@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioWiki - Inicio</title>
+    <link rel="icon" href="logo.png">
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.8;
+        margin: 0;
+        padding: 0;
+        background-color: #f9fafb;
+        color: #202124;
+    }
+    
+    header {
+        background-color: #ffffff;
+        padding: 30px;
+        text-align: center;
+        border-bottom: 2px solid #dcdcdc;
+        font-size: 1.8em;
+        font-weight: bold;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    section {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 30px;
+        background: white;
+        border: 1px solid #ced4da;
+        border-radius: 8px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+        text-align: center;
+    }
+    
+    h2 {
+        border-bottom: 3px solid #ced4da;
+        padding-bottom: 10px;
+        color: #343a40;
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #e9ecef;
+        border-top: 2px solid #dcdcdc;
+        margin-top: 30px;
+        font-size: 0.9em;
+        color: #555;
+        box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .bio-button {
+        text-align: center;
+        line-height: 50px;
+        background: #ffe874;
+        width: 80%;
+        margin: auto;
+        height: 50px;
+        border-radius: 8px;
+        transition: 0.5s ease;
+    }
+
+    .bio-button:hover {
+        cursor: pointer;
+        scale: 0.9;
+    }
+
+    .mailbutton {
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        background: rgba(0, 0, 0, 0);
+        border: none;
+        position: static;
+        transition: 0.5s ease;
+    }
+
+    .mailbutton:hover {
+        cursor: pointer;
+        scale: 1.1;
+    }
+
+    .mailimg {
+        margin-left: -8px;
+        height: 50px;
+        width: 50px;
+    }
+</style>
+</head>
+<body>
+    <button class="mailbutton" onclick="window.location.href = 'contacto.html'"><img src="img/mail.png" class="mailimg" alt="mail"></button>
+    <header>
+        <h1 style="color: #3498db">BioWiki</h1>
+        <p>La enciclopedia de biografías en línea</p>
+    </header>
+    
+    <section>
+        <h2>Sobre <span style="color: #3498db">BioWiki</span></h2>
+        <p>BioWiki es una plataforma donde puedes encontrar biografías de diferentes figuras públicas, creadores de contenido, artistas y más. Nuestra misión es proporcionar información confiable y accesible sobre personas influyentes en diversos ámbitos.</p>
+    </section>
+    
+    <section>
+        <h2>Explora Biografías</h2>
+        <p>Descubre la historia detrás de tus creadores de contenido favoritos.</p>
+        <div class="bio-button" onclick="window.location.href = 'spreen.html'">
+        <h5 style="color: #3498db; font-size: 25px">Spreen</h5>
+    </div>
+    <div class="bio-button" onclick="window.location.href = 'elonmusk.html'">
+        <h5 style="color: #3498db; font-size: 25px">Elon Musk</h5>
+    </div>
+    <div class="bio-button" onclick="window.location.href = 'raykroc.html'">
+        <h5 style="color: #3498db; font-size: 25px">Ray Kroc</h5>
+    </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 BioWiki - Información basada en fuentes públicas.</p>
+    </footer>
+</body>
+<script>
+
+    if (window.location.pathname.endsWith("index.html")) {
+        window.history.replaceState(null, "", "/");
+    }    
+
+</script>
+</html>

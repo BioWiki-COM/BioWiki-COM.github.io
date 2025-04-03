@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elon Musk - BioWiki</title>
+    <link rel="icon" href="logo.png">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: #f9fafb;
+            color: #202124;
+        }
+        
+        header {
+            background-color: #ffffff;
+            padding: 30px;
+            text-align: center;
+            border-bottom: 2px solid #dcdcdc;
+            font-size: 1.8em;
+            font-weight: bold;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        nav {
+            background: #e9ecef;
+            padding: 15px;
+            margin: 20px auto;
+            border: 1px solid #ced4da;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        nav h2 {
+            margin: 0 0 10px 0;
+            font-size: 22px;
+            color: #343a40;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        nav ul li {
+            margin: 5px 0;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.2s;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+        
+        nav a:hover {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #007bff;
+            transform: scale(1.1);
+        }
+        
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 30px;
+            background: white;
+            border: 1px solid #ced4da;
+            border-radius: 8px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        h2 {
+            border-bottom: 3px solid #ced4da;
+            padding-bottom: 10px;
+            color: #343a40;
+            font-size: 2em;
+            text-align: center;
+        }
+        
+        .profile-img {
+            width: 100%;
+            max-width: 320px;
+            display: block;
+            margin: 15px auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        
+        .profile-img:hover {
+            transform: scale(1.05);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #e9ecef;
+            border-top: 2px solid #dcdcdc;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #555;
+            box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .infocompleta {
+            color: #3498db;
+            text-align: center;
+            font-family: monospace;
+        }
+
+        #downloadBtn {
+            color: #3498db;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border: #3498db solid 3px;
+            height: 80px;
+            width: 250px;
+            border-radius: 10px;
+            font-size: 50px;
+            background: white;
+            transition: 0.3s linear;
+        }
+
+        #downloadBtn:hover {
+            scale: 0.9;
+            cursor: pointer;
+            background: #ced4da;
+        }
+
+        .buttondownload {
+            text-align: center;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const links = document.querySelectorAll("nav a");
+            links.forEach(link => {
+                link.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    targetElement.scrollIntoView({ behavior: "smooth" });
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" style="text-decoration: none; color: #3498db; position: absolute; top: 10px; left: 20px; font-size: 18px;">BioWiki</a></h1>
+
+        <h2>Elon Musk</h2>
+        <p>De BioWiki, la enciclopedia de biografías</p>
+    </header>
+    
+    <nav>
+        <h2>Índice</h2>
+        <ul>
+            <li><a href="#biografia">Biografía</a></li>
+            <li><a href="#trayectoria">Trayectoria</a></li>
+            <li><a href="#impacto">Impacto</a></li>
+        </ul>
+    </nav>
+    
+    <section id="biografia">
+        <h2>Biografía</h2>
+        <img src="img/elonmusk.jpg" alt="Elon Musk" class="profile-img">
+        <p><strong>Nombre completo:</strong> Elon Reeve Musk</p>
+        <p><strong>Fecha de nacimiento:</strong> 28 de junio de 1971</p>
+        <p><strong>Nacionalidad:</strong> Sudafricana, Canadiense, Estadounidense</p>
+        <p>Elon Musk es un empresario, ingeniero y magnate sudafricano nacionalizado canadiense y estadounidense. Es conocido por ser el fundador de SpaceX, CEO de Tesla, y cofundador de diversas empresas tecnológicas como Neuralink y The Boring Company.</p>
+    </section>
+    
+    <section id="trayectoria">
+        <h2>Trayectoria y Carrera</h2>
+        <p>Musk fundó Zip2 en 1996, una empresa de software que fue vendida por más de 300 millones de dólares. Posteriormente, cofundó X.com, que se convirtió en PayPal y fue adquirida por eBay en 2002.</p>
+        <p>En 2002 fundó SpaceX con el objetivo de reducir los costos de los viajes espaciales y colonizar Marte. También se convirtió en el CEO de Tesla en 2008, revolucionando la industria de los autos eléctricos.</p>
+    </section>
+    
+    <section id="impacto">
+        <h2>Impacto y Popularidad</h2>
+        <p>Elon Musk es una de las figuras más influyentes en el mundo de la tecnología. Ha liderado innovaciones en inteligencia artificial, transporte espacial y energía sostenible, convirtiéndose en una de las personas más ricas del mundo.</p>
+    </section>
+    <div class="buttondownload">
+    <h1 class="infocompleta">Información Completa</h1>
+    <button id="downloadBtn">Descargar</button>
+    </div>
+    <script>
+        document.getElementById("downloadBtn").addEventListener("click", function () {
+            const contenido = `BioWiki
+==========================
+Elon Musk
+De BioWiki, la enciclopedia de biografías
+    
+Nombre completo: Elon Reeve Musk
+Fecha de nacimiento: 28 de junio de 1971
+Nacionalidad: Sudafricana, Canadiense, Estadounidense
+Ocupación: Empresario, ingeniero, inventor, magnate tecnológico
+Empresas: Tesla, SpaceX, Neuralink, The Boring Company, X (antes Twitter), OpenAI (cofundador)
+Años activo: 1995 - Presente
+    
+Biografía:
+Elon Musk nació el 28 de junio de 1971 en Pretoria, Sudáfrica. Desde una edad temprana, mostró un interés excepcional por la tecnología y la programación. A los 12 años vendió su primer software, un videojuego llamado "Blastar". Estudió en la Universidad de Pretoria antes de mudarse a Canadá y posteriormente a los EE.UU., donde asistió a la Universidad de Pensilvania.
+    
+Trayectoria y Carrera:
+Musk cofundó Zip2, una empresa de software que fue vendida por 307 millones de dólares. Posteriormente, fundó X.com, que más tarde se convertiría en PayPal. En 2002, fundó SpaceX con la visión de hacer los viajes espaciales más accesibles y en 2004 se unió a Tesla, convirtiéndose en su CEO y transformándola en una de las empresas de vehículos eléctricos más importantes del mundo. También ha trabajado en proyectos como Neuralink (neurotecnología), The Boring Company (infraestructura y túneles) y OpenAI (inteligencia artificial).
+    
+Impacto y Logros:
+Musk ha revolucionado múltiples industrias con sus innovaciones en energía, transporte y exploración espacial. SpaceX se convirtió en la primera empresa privada en lanzar una nave a la Estación Espacial Internacional, y Tesla ha liderado el mercado de vehículos eléctricos. También ha promovido la colonización de Marte como un objetivo a largo plazo.
+    
+Momentos Destacados:
+- Lanzamiento exitoso del Falcon 1 en 2008, el primer cohete privado en alcanzar la órbita.
+- Creación del Tesla Model S en 2012, marcando el inicio de la era de los autos eléctricos de lujo.
+- Colonización de Marte como una visión de futuro para la humanidad con SpaceX.
+- Adquisición de Twitter en 2022 y cambio de nombre a X.
+    
+Frases Icónicas:
+- "Cuando algo es lo suficientemente importante, lo haces incluso si las probabilidades no están a tu favor."
+- "Creo que es posible para la gente común elegir ser extraordinaria."
+- "No quiero ser el salvador de nadie. Solo intento pensar en el futuro y no estar triste."
+    
+Curiosidades:
+- Apareció en cameos en Iron Man 2, The Big Bang Theory y Rick & Morty.
+- Su empresa Neuralink trabaja en la conexión entre cerebros humanos y computadoras.
+- Ha expresado su preocupación por los riesgos de la inteligencia artificial descontrolada.
+    
+Redes Sociales:
+- X (Twitter): https://twitter.com/elonmusk
+- Tesla: https://www.tesla.com/
+- SpaceX: https://www.spacex.com/
+    
+Artículo basado en información pública. BioWiki no tiene afiliación con Elon Musk.`;
+    
+            const blob = new Blob([contenido.replace(/\n/g, "\r\n")], { type: "text/plain" });
+            const a = document.createElement("a");
+            a.href = URL.createObjectURL(blob);
+            a.download = "ElonMusk_BioWiki.txt";
+            a.click();
+        });
+    </script>
+    
+    <footer>
+        <p>Artículo basado en información pública. BioWiki no tiene afiliación con Elon Musk.</p>
+    </footer>
+    
+    
+</body>
+</html>
