@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lewis Hamilton - BioWiki</title>
+    <link rel="icon" href="logo.png">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: #f9fafb;
+            color: #202124;
+        }
+        header {
+            background-color: #ffffff;
+            padding: 30px;
+            text-align: center;
+            border-bottom: 2px solid #dcdcdc;
+            font-size: 1.8em;
+            font-weight: bold;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            background: #e9ecef;
+            padding: 15px;
+            margin: 20px auto;
+            border: 1px solid #ced4da;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav h2 {
+            margin: 0 0 10px 0;
+            font-size: 22px;
+            color: #343a40;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        nav ul li {
+            margin: 5px 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.2s;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #007bff;
+            transform: scale(1.1);
+        }
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 30px;
+            background: white;
+            border: 1px solid #ced4da;
+            border-radius: 8px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        h2 {
+            border-bottom: 3px solid #ced4da;
+            padding-bottom: 10px;
+            color: #343a40;
+            font-size: 2em;
+            text-align: center;
+        }
+        .profile-img {
+            width: 100%;
+            max-width: 320px;
+            display: block;
+            margin: 15px auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .profile-img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #e9ecef;
+            border-top: 2px solid #dcdcdc;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #555;
+            box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .infocompleta {
+            color: #3498db;
+            text-align: center;
+            font-family: monospace;
+        }
+        #downloadBtn {
+            color: #3498db;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border: #3498db solid 3px;
+            height: 80px;
+            width: 250px;
+            border-radius: 10px;
+            font-size: 50px;
+            background: white;
+            transition: 0.3s linear;
+        }
+        #downloadBtn:hover {
+            scale: 0.9;
+            cursor: pointer;
+            background: #ced4da;
+        }
+        .buttondownload {
+            text-align: center;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const links = document.querySelectorAll("nav a");
+            links.forEach(link => {
+                link.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    targetElement.scrollIntoView({ behavior: "smooth" });
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" style="text-decoration: none; color: #3498db; position: absolute; top: 10px; left: 20px; font-size: 18px;">BioWiki</a></h1>
+        <h2>Lewis Hamilton</h2>
+        <p>De BioWiki, la enciclopedia de biografías</p>
+    </header>
+    
+    <nav>
+        <h2>Índice</h2>
+        <ul>
+            <li><a href="#biografia">Biografía</a></li>
+            <li><a href="#trayectoria">Trayectoria</a></li>
+            <li><a href="#impacto">Impacto</a></li>
+        </ul>
+    </nav>
+    
+    <section id="biografia">
+        <h2>Biografía</h2>
+        <img src="https://tse4.mm.bing.net/th?id=OIP.dqxyNu7uUX6w02QNssbfggHaEK&pid=Api&P=0&h=180" alt="Lewis Hamilton" class="profile-img">
+        <p><strong>Nombre real:</strong> Lewis Carl Davidson Hamilton</p>
+        <p><strong>Fecha de nacimiento:</strong> 7 de enero de 1985</p>
+        <p><strong>Nacionalidad:</strong> Británica</p>
+        <p>Lewis Hamilton nació en Stevenage, Inglaterra, el 7 de enero de 1985. Desde niño mostró un gran interés por el automovilismo y a temprana edad comenzó a competir en karts. Su talento lo llevó a ingresar a los programas juveniles de McLaren y Mercedes.</p>
+    </section>
+    
+    <section id="trayectoria">
+        <h2>Trayectoria y Carrera</h2>
+        <p>Hamilton debutó en la Fórmula 1 en 2007 con el equipo McLaren, ganando su primer campeonato mundial en 2008. En 2013 se unió a Mercedes-AMG Petronas, donde consolidó su dominio en la categoría, ganando múltiples campeonatos mundiales.</p>
+        <p>Es conocido por su agresivo estilo de conducción, su consistencia en pista y su rol como activista dentro y fuera del deporte. Ha superado numerosos récords en la historia de la Fórmula 1, incluyendo el de más victorias.</p>
+    </section>
+    
+    <section id="impacto">
+        <h2>Impacto y Popularidad</h2>
+        <p>Lewis Hamilton es uno de los pilotos más exitosos de la historia de la Fórmula 1. Además de sus logros deportivos, es una figura influyente en temas de igualdad racial, sostenibilidad y derechos de los animales.</p>
+        <p>Ha sido nombrado caballero por la reina Isabel II, y es admirado por su activismo y su influencia cultural más allá del automovilismo.</p>
+    </section>
+    
+    <div class="buttondownload">
+        <h1 class="infocompleta">Información Completa</h1>
+        <button id="downloadBtn">Descargar</button>
+    </div>
+
+    <script>
+        document.getElementById("downloadBtn").addEventListener("click", function () {
+            const contenido = `BioWiki
+==========================
+Lewis Hamilton
+De BioWiki, la enciclopedia de biografías
+
+Nombre real: Lewis Carl Davidson Hamilton
+Fecha de nacimiento: 7 de enero de 1985
+Nacionalidad: Británica
+Ocupación: Piloto de Fórmula 1
+Equipos: McLaren, Mercedes-AMG Petronas
+Años activo: 2007 - Presente
+
+Biografía:
+Lewis Hamilton nació en Stevenage, Inglaterra. Comenzó su carrera en el karting y rápidamente se destacó por su velocidad y talento. Su ascenso fue respaldado por McLaren y Mercedes desde una edad temprana.
+
+Trayectoria:
+Debutó en la Fórmula 1 con McLaren en 2007 y ganó su primer título mundial en 2008. En 2013, se unió a Mercedes y allí se convirtió en uno de los pilotos más exitosos de todos los tiempos, ganando múltiples campeonatos.
+
+Impacto:
+Hamilton ha roto barreras en la F1 como el primer piloto negro en competir en la categoría. Es conocido por su activismo en justicia social, ambientalismo y derechos animales.
+
+Logros:
+- 7 veces campeón mundial de F1 (2008, 2014-2015, 2017-2020)
+- Más de 100 victorias y poles en su carrera
+- Récords históricos de puntos y podios
+
+Frases Célebres:
+- "Todavía estoy subiendo montañas, aún no he alcanzado la cima."
+- "El éxito no se mide por victorias, sino por cómo inspiras a otros."
+
+Curiosidades:
+- Vegano y defensor de los derechos de los animales
+- Ha lanzado su propia marca de moda sostenible
+- Fue nombrado caballero (Sir) en 2021
+
+Redes Sociales:
+- Instagram: https://instagram.com/lewishamilton
+- Página oficial: https://lewishamilton.com
+
+Artículo basado en información pública. BioWiki no tiene afiliación con Lewis Hamilton.`;
+
+            const blob = new Blob([contenido.replace(/\n/g, "\r\n")], { type: "text/plain" });
+            const a = document.createElement("a");
+            a.href = URL.createObjectURL(blob);
+            a.download = "Hamilton_BioWiki.txt";
+            a.click();
+        });
+    </script>
+
+    <footer>
+        <p>Artículo basado en información pública. BioWiki no tiene afiliación con Lewis Hamilton.</p>
+    </footer>
+</body>
+</html>
