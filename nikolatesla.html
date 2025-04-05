@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikola Tesla - BioWiki</title>
+    <link rel="icon" href="logo.png">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: #f9fafb;
+            color: #202124;
+        }
+        
+        header {
+            background-color: #ffffff;
+            padding: 30px;
+            text-align: center;
+            border-bottom: 2px solid #dcdcdc;
+            font-size: 1.8em;
+            font-weight: bold;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        nav {
+            background: #e9ecef;
+            padding: 15px;
+            margin: 20px auto;
+            border: 1px solid #ced4da;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        nav h2 {
+            margin: 0 0 10px 0;
+            font-size: 22px;
+            color: #343a40;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        nav ul li {
+            margin: 5px 0;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.2s;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+        
+        nav a:hover {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #007bff;
+            transform: scale(1.1);
+        }
+        
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 30px;
+            background: white;
+            border: 1px solid #ced4da;
+            border-radius: 8px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        h2 {
+            border-bottom: 3px solid #ced4da;
+            padding-bottom: 10px;
+            color: #343a40;
+            font-size: 2em;
+            text-align: center;
+        }
+        
+        .profile-img {
+            width: 100%;
+            max-width: 320px;
+            display: block;
+            margin: 15px auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        
+        .profile-img:hover {
+            transform: scale(1.05);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #e9ecef;
+            border-top: 2px solid #dcdcdc;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #555;
+            box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .infocompleta {
+            color: #3498db;
+            text-align: center;
+            font-family: monospace;
+        }
+
+        #downloadBtn {
+            color: #3498db;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border: #3498db solid 3px;
+            height: 80px;
+            width: 250px;
+            border-radius: 10px;
+            font-size: 50px;
+            background: white;
+            transition: 0.3s linear;
+        }
+
+        #downloadBtn:hover {
+            scale: 0.9;
+            cursor: pointer;
+            background: #ced4da;
+        }
+
+        .buttondownload {
+            text-align: center;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const links = document.querySelectorAll("nav a");
+            links.forEach(link => {
+                link.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    targetElement.scrollIntoView({ behavior: "smooth" });
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" style="text-decoration: none; color: #3498db; position: absolute; top: 10px; left: 20px; font-size: 18px;">BioWiki</a></h1>
+        <h2>Nikola Tesla</h2>
+        <p>De BioWiki, la enciclopedia de biografías</p>
+    </header>
+    
+    <nav>
+        <h2>Índice</h2>
+        <ul>
+            <li><a href="#biografia">Biografía</a></li>
+            <li><a href="#trayectoria">Trayectoria</a></li>
+            <li><a href="#impacto">Impacto</a></li>
+        </ul>
+    </nav>
+    
+    <section id="biografia">
+        <h2>Biografía</h2>
+        <img src="https://tse4.mm.bing.net/th?id=OIP.EqhYfPyKvTbznURGeVjMFAHaD4&pid=Api&P=0&h=180" alt="Nikola Tesla" class="profile-img">
+        <p><strong>Nombre real:</strong> Nikola Tesla</p>
+        <p><strong>Fecha de nacimiento:</strong> 10 de julio de 1856</p>
+        <p><strong>Nacionalidad:</strong> Serbio-estadounidense</p>
+        <p>Nikola Tesla nació en Smiljan, en el Imperio austríaco (actual Croacia), el 10 de julio de 1856. Fue un inventor, ingeniero eléctrico, ingeniero mecánico y físico conocido por sus revolucionarias contribuciones al desarrollo de la corriente alterna (CA).</p>
+    </section>
+    
+    <section id="trayectoria">
+        <h2>Trayectoria y Carrera</h2>
+        <p>Tesla trabajó inicialmente como ingeniero en Europa antes de emigrar a los Estados Unidos en 1884, donde colaboró con Thomas Edison. Posteriormente, desarrolló su propio laboratorio y realizó importantes descubrimientos, incluyendo la bobina de Tesla y sistemas de transmisión inalámbrica de energía.</p>
+        <p>Fue pionero en tecnologías de radio, rayos X, control remoto y electricidad inalámbrica. A pesar de sus innovaciones, enfrentó muchas dificultades económicas y murió en relativo anonimato en 1943.</p>
+    </section>
+    
+    <section id="impacto">
+        <h2>Impacto y Popularidad</h2>
+        <p>Tesla es considerado uno de los mayores inventores de la historia. Su visión futurista influyó profundamente en el desarrollo de la tecnología moderna. Fue reconocido póstumamente como un genio adelantado a su tiempo.</p>
+        <p>La unidad del SI de campo magnético lleva su nombre (tesla), y su legado ha sido reivindicado por científicos, ingenieros y entusiastas de todo el mundo. Su figura ha sido popularizada en la cultura contemporánea y la empresa Tesla Motors fue nombrada en su honor.</p>
+    </section>
+
+    <div class="buttondownload">
+        <h1 class="infocompleta">Información Completa</h1>
+        <button id="downloadBtn">Descargar</button>
+    </div>
+
+<script>
+    document.getElementById("downloadBtn").addEventListener("click", function () {
+        const contenido = `BioWiki
+==========================
+Nikola Tesla
+De BioWiki, la enciclopedia de biografías
+
+Nombre real: Nikola Tesla
+Fecha de nacimiento: 10 de julio de 1856
+Nacionalidad: Serbio-estadounidense
+Ocupación: Inventor, ingeniero eléctrico, ingeniero mecánico, físico
+
+Biografía:
+Nikola Tesla nació en Smiljan, Imperio austríaco (actual Croacia), el 10 de julio de 1856. Desde temprana edad mostró un talento extraordinario para la invención. Estudió ingeniería eléctrica y emigró a los Estados Unidos, donde desarrolló gran parte de su obra.
+
+Trayectoria:
+Trabajó con Thomas Edison antes de fundar su propio laboratorio. Entre sus logros destacan el desarrollo de la corriente alterna (CA), la bobina de Tesla y sus investigaciones sobre energía inalámbrica. A lo largo de su vida registró más de 300 patentes.
+
+Impacto:
+Tesla es ampliamente reconocido como un pionero de la electricidad moderna. Sus ideas influenciaron avances en radio, radar, control remoto y más. Aunque murió solo y con pocos recursos en 1943, su legado continúa siendo una inspiración científica.
+
+Logros:
+- Desarrollo del sistema de corriente alterna (CA)
+- Invención de la bobina de Tesla
+- Aportes a la radio, el radar y los rayos X
+- Más de 300 patentes registradas
+
+Frases Célebres:
+- "El presente es de ustedes, pero el futuro por el que realmente he trabajado me pertenece."
+- "Si quieres entender el universo, piensa en términos de energía, frecuencia y vibración."
+
+Curiosidades:
+- Tenía una memoria fotográfica impresionante.
+- Dormía solo dos horas por día.
+- Era obsesivo con la limpieza y los números.
+- Nunca se casó y dedicó su vida a la ciencia.
+
+Homenajes:
+- La unidad "tesla" del sistema internacional mide la densidad de flujo magnético.
+- La empresa Tesla Motors fue nombrada en su honor.
+- En 2003, fue votado como uno de los más grandes serbios de todos los tiempos.
+
+Artículo basado en información pública. BioWiki no tiene afiliación con Nikola Tesla.`;
+
+        const blob = new Blob([contenido.replace(/\n/g, "\r\n")], { type: "text/plain" });
+        const a = document.createElement("a");
+        a.href = URL.createObjectURL(blob);
+        a.download = "Tesla_BioWiki.txt";
+        a.click();
+    });
+</script>
+
+    <footer>
+        <p>Artículo basado en información pública. BioWiki no tiene afiliación con Nikola Tesla.</p>
+    </footer>
+</body>
+</html>
