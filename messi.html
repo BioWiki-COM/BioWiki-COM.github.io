@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lionel Messi - BioWiki</title>
+    <link rel="icon" href="logo.png">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: #f9fafb;
+            color: #202124;
+        }
+        
+        header {
+            background-color: #ffffff;
+            padding: 30px;
+            text-align: center;
+            border-bottom: 2px solid #dcdcdc;
+            font-size: 1.8em;
+            font-weight: bold;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        nav {
+            background: #e9ecef;
+            padding: 15px;
+            margin: 20px auto;
+            border: 1px solid #ced4da;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        nav h2 {
+            margin: 0 0 10px 0;
+            font-size: 22px;
+            color: #343a40;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        nav ul li {
+            margin: 5px 0;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.2s;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+        
+        nav a:hover {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #007bff;
+            transform: scale(1.1);
+        }
+        
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 30px;
+            background: white;
+            border: 1px solid #ced4da;
+            border-radius: 8px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        h2 {
+            border-bottom: 3px solid #ced4da;
+            padding-bottom: 10px;
+            color: #343a40;
+            font-size: 2em;
+            text-align: center;
+        }
+        
+        .profile-img {
+            width: 100%;
+            max-width: 320px;
+            display: block;
+            margin: 15px auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        
+        .profile-img:hover {
+            transform: scale(1.05);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #e9ecef;
+            border-top: 2px solid #dcdcdc;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #555;
+            box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .infocompleta {
+            color: #3498db;
+            text-align: center;
+            font-family: monospace;
+        }
+
+        #downloadBtn {
+            color: #3498db;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border: #3498db solid 3px;
+            height: 80px;
+            width: 250px;
+            border-radius: 10px;
+            font-size: 50px;
+            background: white;
+            transition: 0.3s linear;
+        }
+
+        #downloadBtn:hover {
+            scale: 0.9;
+            cursor: pointer;
+            background: #ced4da;
+        }
+
+        .buttondownload {
+            text-align: center;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const links = document.querySelectorAll("nav a");
+            links.forEach(link => {
+                link.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    targetElement.scrollIntoView({ behavior: "smooth" });
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" style="text-decoration: none; color: #3498db; position: absolute; top: 10px; left: 20px; font-size: 18px;">BioWiki</a></h1>
+
+        <h2>Lionel Messi</h2>
+        <p>De BioWiki, la enciclopedia de biografías</p>
+    </header>
+    
+    <nav>
+        <h2>Índice</h2>
+        <ul>
+            <li><a href="#biografia">Biografía</a></li>
+            <li><a href="#trayectoria">Trayectoria</a></li>
+            <li><a href="#impacto">Impacto</a></li>
+        </ul>
+    </nav>
+    
+    <section id="biografia">
+        <h2>Biografía</h2>
+        <img src="https://tse3.mm.bing.net/th?id=OIP.sohokEiI8o8yJkqD8p1bSgHaED&pid=Api&P=0&h=180" alt="Lionel Messi" class="profile-img">
+        <p><strong>Nombre real:</strong> Lionel Andrés Messi Cuccittini</p>
+        <p><strong>Fecha de nacimiento:</strong> 24 de junio de 1987</p>
+        <p><strong>Nacionalidad:</strong> Argentina</p>
+        <p>Lionel Messi nació en Rosario, Argentina, el 24 de junio de 1987. Desde muy joven mostró habilidades extraordinarias para el fútbol, y a los 13 años se trasladó a Barcelona, España, para unirse a La Masía, la cantera del FC Barcelona.</p>
+    </section>
+    
+    <section id="trayectoria">
+        <h2>Trayectoria y Carrera</h2>
+        <p>Messi debutó con el primer equipo del FC Barcelona en 2004. A lo largo de su carrera en el club, ganó múltiples títulos incluyendo 10 Ligas, 7 Copas del Rey y 4 Champions League. Es el máximo goleador histórico del club y ha sido galardonado con múltiples Balones de Oro.</p>
+        <p>En 2021, tras más de 20 años en el Barça, se trasladó al Paris Saint-Germain (PSG). En 2023, firmó con el Inter Miami en la Major League Soccer (MLS). Con la selección argentina ha ganado la Copa América 2021 y la Copa Mundial de la FIFA 2022.</p>
+    </section>
+    
+    <section id="impacto">
+        <h2>Impacto y Popularidad</h2>
+        <p>Messi es considerado uno de los mejores futbolistas de todos los tiempos. Ha sido un referente dentro y fuera de la cancha por su talento, humildad y dedicación. Su legado trasciende generaciones y fronteras, inspirando a millones de personas en todo el mundo.</p>
+        <p>Su rivalidad histórica con Cristiano Ronaldo ha marcado una era dorada del fútbol. Más allá del deporte, Messi ha sido imagen de múltiples marcas y ha apoyado causas sociales y benéficas a través de su fundación.</p>
+    </section>
+    <div class="buttondownload">
+        <h1 class="infocompleta">Información Completa</h1>
+        <button id="downloadBtn">Descargar</button>
+    </div>
+<script>
+    document.getElementById("downloadBtn").addEventListener("click", function () {
+        const contenido = `BioWiki
+==========================
+Lionel Messi
+De BioWiki, la enciclopedia de biografías
+
+Nombre real: Lionel Andrés Messi Cuccittini
+Fecha de nacimiento: 24 de junio de 1987
+Nacionalidad: Argentina
+Ocupación: Futbolista profesional
+Equipos: FC Barcelona, PSG, Inter Miami
+Selección: Argentina
+Posición: Delantero
+Años activo: 2003 - Presente
+
+Biografía:
+Lionel Messi nació en Rosario, Argentina, el 24 de junio de 1987. Desde muy joven mostró un gran talento futbolístico. Fue diagnosticado con una deficiencia hormonal de crecimiento, y gracias al apoyo del FC Barcelona, se trasladó a España para continuar su desarrollo deportivo.
+
+Trayectoria:
+Debutó profesionalmente con el Barcelona en 2004. Allí se convirtió en el jugador más importante en la historia del club. En 2021, se unió al PSG y en 2023 fichó por el Inter Miami.
+
+Con la selección argentina ganó:
+- Medalla de oro en los Juegos Olímpicos 2008
+- Copa América 2021
+- Copa Mundial de la FIFA 2022
+
+Impacto:
+Considerado uno de los mejores futbolistas de la historia, ha ganado 8 Balones de Oro. Su estilo de juego, visión, regate y precisión lo han hecho único.
+
+Logros:
+- Máximo goleador histórico del FC Barcelona y de la selección argentina.
+- Más de 800 goles en su carrera.
+- 8 Balones de Oro.
+- Récords de asistencias, goles y títulos.
+
+Frases Célebres:
+- "Prefiero ganar títulos colectivos a premios individuales."
+- "Siempre intento superarme día a día."
+
+Curiosidades:
+- Ha vivido casi toda su vida en Barcelona.
+- Es embajador de UNICEF.
+- Tiene una fundación que ayuda a niños en situación vulnerable.
+- Es fanático del mate y la comida argentina.
+
+Redes Sociales:
+- Instagram: https://instagram.com/leomessi
+- Página oficial: https://leomessi.com
+
+Artículo basado en información pública. BioWiki no tiene afiliación con Lionel Messi.`;
+
+        const blob = new Blob([contenido.replace(/\n/g, "\r\n")], { type: "text/plain" });
+        const a = document.createElement("a");
+        a.href = URL.createObjectURL(blob);
+        a.download = "Messi_BioWiki.txt";
+        a.click();
+    });
+</script>
+    <footer>
+        <p>Artículo basado en información pública. BioWiki no tiene afiliación con Lionel Messi.</p>
+    </footer>
+</body>
+</html>
