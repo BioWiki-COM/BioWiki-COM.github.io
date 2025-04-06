@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robleis - BioWiki</title>
+    <link rel="icon" href="logo.png">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: #f9fafb;
+            color: #202124;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 30px;
+            text-align: center;
+            border-bottom: 2px solid #dcdcdc;
+            font-size: 1.8em;
+            font-weight: bold;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            background: #e9ecef;
+            padding: 15px;
+            margin: 20px auto;
+            border: 1px solid #ced4da;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav h2 {
+            margin: 0 0 10px 0;
+            font-size: 22px;
+            color: #343a40;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        nav ul li {
+            margin: 5px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.2s;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #007bff;
+            transform: scale(1.1);
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 30px;
+            background: white;
+            border: 1px solid #ced4da;
+            border-radius: 8px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        h2 {
+            border-bottom: 3px solid #ced4da;
+            padding-bottom: 10px;
+            color: #343a40;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 100%;
+            max-width: 320px;
+            display: block;
+            margin: 15px auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #e9ecef;
+            border-top: 2px solid #dcdcdc;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #555;
+            box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .infocompleta {
+            color: #3498db;
+            text-align: center;
+            font-family: monospace;
+        }
+
+        #downloadBtn {
+            color: #3498db;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border: #3498db solid 3px;
+            height: 80px;
+            width: 250px;
+            border-radius: 10px;
+            font-size: 50px;
+            background: white;
+            transition: 0.3s linear;
+        }
+
+        #downloadBtn:hover {
+            scale: 0.9;
+            cursor: pointer;
+            background: #ced4da;
+        }
+
+        .buttondownload {
+            text-align: center;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const links = document.querySelectorAll("nav a");
+            links.forEach(link => {
+                link.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    targetElement.scrollIntoView({ behavior: "smooth" });
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" style="text-decoration: none; color: #3498db; position: absolute; top: 10px; left: 20px; font-size: 18px;">BioWiki</a></h1>
+        <h2>Robleis</h2>
+        <p>De BioWiki, la enciclopedia de biografías</p>
+    </header>
+
+    <nav>
+        <h2>Índice</h2>
+        <ul>
+            <li><a href="#biografia">Biografía</a></li>
+            <li><a href="#trayectoria">Trayectoria</a></li>
+            <li><a href="#impacto">Impacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="biografia">
+        <h2>Biografía</h2>
+        <img src="https://tse3.mm.bing.net/th?id=OIP._RH7uz8z7bgGpJ8J5zv56QHaEK&pid=Api&P=0&h=180" alt="Robleis" class="profile-img">
+        <p><strong>Nombre completo:</strong> Tomás Arbillaga</p>
+        <p><strong>Fecha de nacimiento:</strong> 1 de octubre de 1998</p>
+        <p><strong>Nacionalidad:</strong> Argentino</p>
+        <p>Robleis es un creador de contenido, músico y streamer argentino reconocido por sus videos de entretenimiento en YouTube, sus transmisiones en vivo y su carrera musical.</p>
+    </section>
+
+    <section id="trayectoria">
+        <h2>Trayectoria y Carrera</h2>
+        <p>Robleis comenzó su carrera en YouTube subiendo videos de juegos como Clash Royale y luego se diversificó hacia contenido humorístico, retos y vlogs.</p>
+        <p>Con el tiempo, se expandió al mundo musical, lanzando canciones que han acumulado millones de reproducciones en plataformas digitales. También realiza transmisiones en Twitch y tiene una comunidad muy activa.</p>
+    </section>
+
+    <section id="impacto">
+        <h2>Impacto y Legado</h2>
+        <p>Robleis ha influenciado a una generación de jóvenes en Latinoamérica. Su cercanía con sus seguidores, versatilidad y carisma lo han convertido en una figura muy querida tanto en redes sociales como en la escena musical emergente.</p>
+    </section>
+
+    <div class="buttondownload">
+        <h1 class="infocompleta">Información Completa</h1>
+        <button id="downloadBtn">Descargar</button>
+    </div>
+
+    <script>
+        document.getElementById("downloadBtn").addEventListener("click", function () {
+            const contenido = `BioWiki
+==========================
+Robleis
+De BioWiki, la enciclopedia de biografías
+
+Nombre completo: Tomás Arbillaga
+Fecha de nacimiento: 1 de octubre de 1998
+Nacionalidad: Argentino
+Ocupación: Creador de contenido, músico, streamer
+
+Biografía:
+Tomás Arbillaga, conocido como Robleis, nació el 1 de octubre de 1998 en Argentina. Se dio a conocer a través de YouTube con contenido de juegos y desafíos. Con el tiempo, se convirtió en una figura influyente también en el ámbito musical.
+
+Trayectoria y Carrera:
+Comenzó en YouTube en 2013 y se volvió popular gracias a juegos como Clash Royale, Happy Wheels y otros. Más tarde amplió su contenido a vlogs, retos y música. Su canal supera los 20 millones de suscriptores. Además, ha lanzado varias canciones con millones de vistas, como "Señal", "Tu Nombre", y "Incondicional".
+
+Impacto y Logros:
+- Más de 20 millones de suscriptores en YouTube.
+- Reconocido en Latinoamérica como influencer musical.
+- Apoyado por una comunidad leal conocida como "Robloxitos".
+
+Momentos Destacados:
+- Primer videoclip musical lanzado en 2020.
+- Participación en eventos presenciales y virtuales.
+- Expansión a Twitch y TikTok con gran éxito.
+
+Frases Icónicas:
+- "Si lo soñás, lo podés lograr."
+- "Nunca dejes de ser quien sos."
+
+Redes Sociales:
+- YouTube: https://www.youtube.com/@Robleis
+- Instagram: https://www.instagram.com/robleis/
+- Spotify: https://open.spotify.com/artist/4hvJzTAZZM4u2ZgQyIuXmv
+
+Artículo basado en información pública. BioWiki no tiene afiliación con Robleis.`;
+
+            const blob = new Blob([contenido.replace(/\n/g, "\r\n")], { type: "text/plain" });
+            const a = document.createElement("a");
+            a.href = URL.createObjectURL(blob);
+            a.download = "Robleis_BioWiki.txt";
+            a.click();
+        });
+    </script>
+
+    <footer>
+        <p>Artículo basado en información pública. BioWiki no tiene afiliación con Robleis.</p>
+    </footer>
+</body>
+</html>
