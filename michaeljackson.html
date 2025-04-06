@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Jackson - BioWiki</title>
+    <link rel="icon" href="logo.png">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: #f9fafb;
+            color: #202124;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 30px;
+            text-align: center;
+            border-bottom: 2px solid #dcdcdc;
+            font-size: 1.8em;
+            font-weight: bold;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            background: #e9ecef;
+            padding: 15px;
+            margin: 20px auto;
+            border: 1px solid #ced4da;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav h2 {
+            margin: 0 0 10px 0;
+            font-size: 22px;
+            color: #343a40;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        nav ul li {
+            margin: 5px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.2s;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #007bff;
+            transform: scale(1.1);
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 30px;
+            background: white;
+            border: 1px solid #ced4da;
+            border-radius: 8px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        h2 {
+            border-bottom: 3px solid #ced4da;
+            padding-bottom: 10px;
+            color: #343a40;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 100%;
+            max-width: 320px;
+            display: block;
+            margin: 15px auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #e9ecef;
+            border-top: 2px solid #dcdcdc;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #555;
+            box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .infocompleta {
+            color: #3498db;
+            text-align: center;
+            font-family: monospace;
+        }
+
+        #downloadBtn {
+            color: #3498db;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border: #3498db solid 3px;
+            height: 80px;
+            width: 250px;
+            border-radius: 10px;
+            font-size: 50px;
+            background: white;
+            transition: 0.3s linear;
+        }
+
+        #downloadBtn:hover {
+            scale: 0.9;
+            cursor: pointer;
+            background: #ced4da;
+        }
+
+        .buttondownload {
+            text-align: center;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const links = document.querySelectorAll("nav a");
+            links.forEach(link => {
+                link.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    targetElement.scrollIntoView({ behavior: "smooth" });
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" style="text-decoration: none; color: #3498db; position: absolute; top: 10px; left: 20px; font-size: 18px;">BioWiki</a></h1>
+        <h2>Michael Jackson</h2>
+        <p>De BioWiki, la enciclopedia de biografías</p>
+    </header>
+    
+    <nav>
+        <h2>Índice</h2>
+        <ul>
+            <li><a href="#biografia">Biografía</a></li>
+            <li><a href="#trayectoria">Trayectoria</a></li>
+            <li><a href="#impacto">Impacto</a></li>
+        </ul>
+    </nav>
+    
+    <section id="biografia">
+        <h2>Biografía</h2>
+        <img src="img/michaeljackson.jpg" alt="Michael Jackson" class="profile-img">
+        <p><strong>Nombre completo:</strong> Michael Joseph Jackson</p>
+        <p><strong>Fecha de nacimiento:</strong> 29 de agosto de 1958</p>
+        <p><strong>Fecha de fallecimiento:</strong> 25 de junio de 2009</p>
+        <p><strong>Nacionalidad:</strong> Estadounidense</p>
+        <p>Michael Jackson fue un cantante, compositor y bailarín estadounidense, conocido mundialmente como el "Rey del Pop". Es uno de los artistas más influyentes y exitosos de todos los tiempos.</p>
+    </section>
+    
+    <section id="trayectoria">
+        <h2>Trayectoria y Carrera</h2>
+        <p>Michael comenzó su carrera en la banda familiar The Jackson 5 en los años 60. En los años 80 se convirtió en una superestrella mundial con álbumes como *Thriller*, *Bad* y *Dangerous*.</p>
+        <p>Fue pionero en los videoclips musicales, y su estilo de baile, especialmente el "moonwalk", lo convirtió en un ícono de la cultura pop.</p>
+    </section>
+    
+    <section id="impacto">
+        <h2>Impacto y Legado</h2>
+        <p>Michael Jackson revolucionó la industria de la música y la danza. Su álbum *Thriller* sigue siendo el más vendido de todos los tiempos. También fue un filántropo comprometido con causas sociales y humanitarias.</p>
+    </section>
+    <div class="buttondownload">
+        <h1 class="infocompleta">Información Completa</h1>
+        <button id="downloadBtn">Descargar</button>
+    </div>
+    <script>
+        document.getElementById("downloadBtn").addEventListener("click", function () {
+            const contenido = `BioWiki
+==========================
+Michael Jackson
+De BioWiki, la enciclopedia de biografías
+
+Nombre completo: Michael Joseph Jackson
+Fecha de nacimiento: 29 de agosto de 1958
+Fecha de fallecimiento: 25 de junio de 2009
+Nacionalidad: Estadounidense
+Ocupación: Cantante, compositor, bailarín, productor
+Género musical: Pop, R&B, soul, rock, funk, disco
+
+Biografía:
+Michael Jackson nació en Gary, Indiana, EE.UU. Fue el octavo de diez hijos. Su talento fue evidente desde temprana edad y comenzó su carrera en The Jackson 5. En los años 80 alcanzó la fama global como solista con el álbum *Thriller* (1982), seguido de una serie de éxitos que redefinieron la música popular.
+
+Trayectoria y Carrera:
+Jackson cambió el concepto de videoclip con producciones cinematográficas como "Thriller", "Beat It" y "Billie Jean". Su estilo único y su innovación artística lo convirtieron en un referente de la música y la moda. Ganó cientos de premios, incluyendo múltiples Grammys.
+
+Impacto y Logros:
+- *Thriller* es el álbum más vendido de la historia.
+- Revolucionó el videoclip musical.
+- Introdujo movimientos de baile icónicos como el "moonwalk".
+- Donó millones de dólares a causas benéficas en todo el mundo.
+
+Frases Icónicas:
+- "Heal the world, make it a better place."
+- "If you wanna make the world a better place, take a look at yourself and make that change."
+- "Don’t stop till you get enough."
+
+Curiosidades:
+- Su rancho Neverland incluía un zoológico y un parque de atracciones.
+- Fue incluido en el Salón de la Fama del Rock and Roll dos veces.
+- Es uno de los artistas más premiados de todos los tiempos.
+
+Redes Sociales:
+- Sitio oficial: https://www.michaeljackson.com/
+
+Artículo basado en información pública. BioWiki no tiene afiliación con Michael Jackson.`;
+    
+            const blob = new Blob([contenido.replace(/\n/g, "\r\n")], { type: "text/plain" });
+            const a = document.createElement("a");
+            a.href = URL.createObjectURL(blob);
+            a.download = "MichaelJackson_BioWiki.txt";
+            a.click();
+        });
+    </script>
+    
+    <footer>
+        <p>Artículo basado en información pública. BioWiki no tiene afiliación con Michael Jackson.</p>
+    </footer>
+</body>
+</html>
