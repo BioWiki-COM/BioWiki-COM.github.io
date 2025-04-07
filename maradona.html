@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego Maradona - BioWiki</title>
+    <link rel="icon" href="logo.png">
+    <style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.8;
+        margin: 0;
+        padding: 0;
+        background-color: #f9fafb;
+        color: #202124;
+    }
+    
+    header {
+        background-color: #ffffff;
+        padding: 30px;
+        text-align: center;
+        border-bottom: 2px solid #dcdcdc;
+        font-size: 1.8em;
+        font-weight: bold;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    nav {
+        background: #e9ecef;
+        padding: 15px;
+        margin: 20px auto;
+        border: 1px solid #ced4da;
+        max-width: 800px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    nav h2 {
+        margin: 0 0 10px 0;
+        font-size: 22px;
+        color: #343a40;
+        text-align: center;
+    }
+    
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    nav ul li {
+        margin: 5px 0;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+        transition: color 0.3s, transform 0.2s;
+        padding: 8px 12px;
+        border-radius: 5px;
+    }
+    
+    nav a:hover {
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #007bff;
+        transform: scale(1.1);
+    }
+    
+    section {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 30px;
+        background: white;
+        border: 1px solid #ced4da;
+        border-radius: 8px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    }
+    
+    h2 {
+        border-bottom: 3px solid #ced4da;
+        padding-bottom: 10px;
+        color: #343a40;
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    .profile-img {
+        width: 100%;
+        max-width: 320px;
+        display: block;
+        margin: 15px auto;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s;
+    }
+    
+    .profile-img:hover {
+        transform: scale(1.05);
+    }
+    
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #e9ecef;
+        border-top: 2px solid #dcdcdc;
+        margin-top: 30px;
+        font-size: 0.9em;
+        color: #555;
+        box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .infocompleta {
+        color: #3498db;
+        text-align: center;
+        font-family: monospace;
+    }
+
+    #downloadBtn {
+        color: #3498db;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border: #3498db solid 3px;
+        height: 80px;
+        width: 250px;
+        border-radius: 10px;
+        font-size: 50px;
+        background: white;
+        transition: 0.3s linear;
+    }
+
+    #downloadBtn:hover {
+        scale: 0.9;
+        cursor: pointer;
+        background: #ced4da;
+    }
+
+    .buttondownload {
+        text-align: center;
+    }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const links = document.querySelectorAll("nav a");
+            links.forEach(link => {
+                link.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    targetElement.scrollIntoView({ behavior: "smooth" });
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" style="text-decoration: none; color: #3498db; position: absolute; top: 10px; left: 20px; font-size: 18px;">BioWiki</a></h1>
+        <h2>Diego Maradona</h2>
+        <p>De BioWiki, la enciclopedia de biografías</p>
+    </header>
+    
+    <nav>
+        <h2>Índice</h2>
+        <ul>
+            <li><a href="#biografia">Biografía</a></li>
+            <li><a href="#trayectoria">Trayectoria</a></li>
+            <li><a href="#impacto">Impacto</a></li>
+        </ul>
+    </nav>
+    
+    <section id="biografia">
+        <h2>Biografía</h2>
+        <img src="https://tse3.mm.bing.net/th?id=OIP.7tJbQACAvdUIEvcagKgkxQHaFb&pid=Api&P=0&h=180" alt="Diego Maradona" class="profile-img">
+        <p><strong>Nombre real:</strong> Diego Armando Maradona</p>
+        <p><strong>Fecha de nacimiento:</strong> 30 de octubre de 1960</p>
+        <p><strong>Fecha de fallecimiento:</strong> 25 de noviembre de 2020</p>
+        <p><strong>Nacionalidad:</strong> Argentina</p>
+        <p>Diego Maradona nació en Villa Fiorito, un barrio humilde en Buenos Aires, Argentina. Desde muy pequeño mostró un talento excepcional con el balón, destacándose rápidamente como una de las mayores promesas del fútbol argentino. Su carrera despegó desde joven y se convirtió en una leyenda del deporte.</p>
+    </section>
+    
+    <section id="trayectoria">
+        <h2>Trayectoria y Carrera</h2>
+        <p>Maradona debutó profesionalmente a los 15 años con Argentinos Juniors. Luego jugó en Boca Juniors, Barcelona y Nápoles, donde alcanzó su máximo esplendor. Con la selección argentina ganó la Copa del Mundo en 1986, siendo el protagonista del torneo con goles históricos como “La Mano de Dios” y el “Gol del Siglo”.</p>
+        <p>Tras retirarse como jugador, fue entrenador de varios clubes y de la selección argentina. Su vida personal estuvo marcada por altibajos, pero su talento nunca fue cuestionado.</p>
+    </section>
+    
+    <section id="impacto">
+        <h2>Impacto y Popularidad</h2>
+        <p>Diego Maradona es considerado uno de los mejores futbolistas de todos los tiempos. Fue idolatrado en Argentina y en Nápoles, donde dejó una huella imborrable. Su estilo de juego, carisma y pasión lo convirtieron en un ícono cultural.</p>
+        <p>Más allá del fútbol, Maradona fue una figura controversial y amada por millones. Su legado vive en cada niño que sueña con ser futbolista.</p>
+    </section>
+
+    <div class="buttondownload">
+        <h1 class="infocompleta">Información Completa</h1>
+        <button id="downloadBtn">Descargar</button>
+    </div>
+
+    <script>
+        document.getElementById("downloadBtn").addEventListener("click", function () {
+            const contenido = `BioWiki
+==========================
+Diego Armando Maradona
+De BioWiki, la enciclopedia de biografías
+
+Nombre real: Diego Armando Maradona
+Fecha de nacimiento: 30 de octubre de 1960
+Fecha de fallecimiento: 25 de noviembre de 2020
+Nacionalidad: Argentina
+Ocupación: Futbolista y entrenador
+Posición: Mediocampista ofensivo
+Clubes destacados: Boca Juniors, Barcelona, Napoli
+Selección: Argentina
+
+Biografía:
+Nacido en Villa Fiorito, Buenos Aires, Diego Maradona creció en un entorno humilde. Desde niño demostró un talento sobresaliente. Debutó a los 15 años y se convirtió en una estrella internacional.
+
+Trayectoria:
+Jugó en clubes de renombre y fue ídolo especialmente en el Napoli, donde ganó títulos históricos. Con Argentina, levantó la Copa del Mundo de 1986 y dejó algunos de los goles más memorables en la historia del fútbol.
+
+Impacto:
+Considerado por muchos como el mejor futbolista de todos los tiempos. Su pasión, carisma y habilidad lo hicieron leyenda. Su legado permanece en la historia del deporte y en el corazón de los aficionados.
+
+Frases Célebres:
+- "La pelota no se mancha."
+- "Si me muero, quiero volver a nacer y ser futbolista. Y quiero volver a ser Diego Armando Maradona."
+
+Curiosidades:
+- Fue entrenador de la selección argentina en el Mundial 2010.
+- En Nápoles lo consideran un dios del fútbol.
+- Existe una iglesia maradoniana fundada por sus fanáticos.
+
+Artículo basado en información pública. BioWiki no tiene afiliación con Diego Maradona.`;
+
+            const blob = new Blob([contenido.replace(/\n/g, "\r\n")], { type: "text/plain" });
+            const a = document.createElement("a");
+            a.href = URL.createObjectURL(blob);
+            a.download = "Maradona_BioWiki.txt";
+            a.click();
+        });
+    </script>
+
+    <footer>
+        <p>Artículo basado en información pública. BioWiki no tiene afiliación con Diego Maradona.</p>
+    </footer>
+</body>
+</html>
