@@ -163,6 +163,22 @@
     </footer>
 </body>
 <script>
+    window.addEventListener('DOMContentLoaded', () => {
+        const container = document.querySelector('section:nth-of-type(2)'); 
+        const input = container.querySelector('#searchInput');
+        const noResult = container.querySelector('#noResult');
+        const bioButtons = Array.from(container.querySelectorAll('.bio-button'));
+
+        bioButtons.sort((a, b) => {
+            const nameA = a.textContent.trim().toLowerCase();
+            const nameB = b.textContent.trim().toLowerCase();
+            return nameA.localeCompare(nameB);
+        });
+
+        bioButtons.forEach(btn => container.appendChild(btn));
+    });
+</script>
+<script>
 
     if (window.location.pathname.endsWith("index.html")) {
         window.history.replaceState(null, "", "/");
