@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nico Occhiato - BioWiki</title>
+    <link rel="icon" href="logo.png">
+    <style>
+ body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.8;
+        margin: 0;
+        padding: 0;
+        background-color: #f9fafb;
+        color: #202124;
+    }
+    
+    header {
+        background-color: #ffffff;
+        padding: 30px;
+        text-align: center;
+        border-bottom: 2px solid #dcdcdc;
+        font-size: 1.8em;
+        font-weight: bold;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    nav {
+        background: #e9ecef;
+        padding: 15px;
+        margin: 20px auto;
+        border: 1px solid #ced4da;
+        max-width: 800px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    nav h2 {
+        margin: 0 0 10px 0;
+        font-size: 22px;
+        color: #343a40;
+        text-align: center;
+    }
+    
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    nav ul li {
+        margin: 5px 0;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+        transition: color 0.3s, transform 0.2s;
+        padding: 8px 12px;
+        border-radius: 5px;
+    }
+    
+    nav a:hover {
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #007bff;
+        transform: scale(1.1);
+    }
+    
+    section {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 30px;
+        background: white;
+        border: 1px solid #ced4da;
+        border-radius: 8px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    }
+    
+    h2 {
+        border-bottom: 3px solid #ced4da;
+        padding-bottom: 10px;
+        color: #343a40;
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    .profile-img {
+        width: 100%;
+        max-width: 320px;
+        display: block;
+        margin: 15px auto;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s;
+    }
+    
+    .profile-img:hover {
+        transform: scale(1.05);
+    }
+    
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #e9ecef;
+        border-top: 2px solid #dcdcdc;
+        margin-top: 30px;
+        font-size: 0.9em;
+        color: #555;
+        box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .infocompleta {
+        color: #3498db;
+        text-align: center;
+        font-family: monospace;
+    }
+
+    #downloadBtn {
+        color: #3498db;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border: #3498db solid 3px;
+        height: 80px;
+        width: 250px;
+        border-radius: 10px;
+        font-size: 50px;
+        background: white;
+        transition: 0.3s linear;
+    }
+
+    #downloadBtn:hover {
+        scale: 0.9;
+        cursor: pointer;
+        background: #ced4da;
+    }
+
+    .buttondownload {
+        text-align: center;
+    }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const links = document.querySelectorAll("nav a");
+            links.forEach(link => {
+                link.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    targetElement.scrollIntoView({ behavior: "smooth" });
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" style="text-decoration: none; color: #3498db; position: absolute; top: 10px; left: 20px; font-size: 18px;">BioWiki</a></h1>
+        <h2>Nico Occhiato</h2>
+        <p>De BioWiki, la enciclopedia de biografías</p>
+    </header>
+
+    <nav>
+        <h2>Índice</h2>
+        <ul>
+            <li><a href="#biografia">Biografía</a></li>
+            <li><a href="#trayectoria">Trayectoria</a></li>
+            <li><a href="#impacto">Impacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="biografia">
+        <h2>Biografía</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Nico_Occhiato_2019.jpg" alt="Nico Occhiato" class="profile-img">
+        <p><strong>Nombre real:</strong> Nicolás Occhiato</p>
+        <p><strong>Fecha de nacimiento:</strong> 25 de diciembre de 1992</p>
+        <p><strong>Nacionalidad:</strong> Argentina</p>
+        <p>Nicolás Occhiato es un conductor, actor y productor argentino, nacido el 25 de diciembre de 1992 en Villa Luzuriaga, Buenos Aires. Se hizo conocido por su participación en programas juveniles y más adelante por su carisma en programas de televisión, radio y redes sociales.</p>
+    </section>
+
+    <section id="trayectoria">
+        <h2>Trayectoria y Carrera</h2>
+        <p>Comenzó su carrera mediática en el programa “Combate” de Canal 9, donde rápidamente se convirtió en una de las figuras más queridas del ciclo. Su popularidad lo llevó a nuevos proyectos como conductor, participando en ciclos radiales y televisivos.</p>
+        <p>En 2019, fue el ganador del certamen “Bailando por un sueño”, lo cual impulsó aún más su carrera. En años recientes, se destacó como conductor y creador de contenido a través de su productora LUZU TV, un canal digital que revolucionó el entretenimiento online en Argentina.</p>
+    </section>
+
+    <section id="impacto">
+        <h2>Impacto y Popularidad</h2>
+        <p>Nico Occhiato es considerado una de las figuras jóvenes más influyentes de la televisión y el streaming en Argentina. Con LUZU TV logró captar una nueva audiencia que busca contenido fresco, dinámico y cercano.</p>
+        <p>Su perfil carismático y versátil le ha permitido destacarse como conductor, entrevistador y referente digital. Ha sido inspiración para otros creadores y emprendedores del medio, generando una comunidad sólida a su alrededor.</p>
+    </section>
+
+    <div class="buttondownload">
+        <h1 class="infocompleta">Información Completa</h1>
+        <button id="downloadBtn">Descargar</button>
+    </div>
+
+    <script>
+        document.getElementById("downloadBtn").addEventListener("click", function () {
+            const contenido = `BioWiki
+==========================
+Nico Occhiato
+De BioWiki, la enciclopedia de biografías
+
+Nombre real: Nicolás Occhiato
+Fecha de nacimiento: 25 de diciembre de 1992
+Nacionalidad: Argentina
+Ocupación: Conductor, productor, actor
+Plataformas: Televisión, radio, YouTube
+Años activo: 2014 - Presente
+
+Biografía:
+Nicolás Occhiato nació el 25 de diciembre de 1992 en Villa Luzuriaga, Buenos Aires. Es un reconocido conductor argentino que alcanzó la popularidad por su participación en programas televisivos como “Combate”. Desde entonces, se ha consolidado como uno de los referentes jóvenes del entretenimiento en Argentina.
+
+Trayectoria y Carrera:
+Su carrera comenzó en el programa juvenil “Combate”, donde fue uno de los participantes más carismáticos. Posteriormente, incursionó en la conducción televisiva y radial, destacándose por su cercanía y espontaneidad.
+
+En 2019, participó y ganó el programa “Bailando por un sueño”, demostrando su versatilidad en el espectáculo. Fundó su propia productora y canal digital llamado LUZU TV, donde lidera programas como “Nadie Dice Nada”, uno de los más populares del país.
+
+Impacto:
+Occhiato revolucionó el formato de entretenimiento digital en Argentina. Con LUZU TV atrajo a una audiencia joven que valora la autenticidad y el humor cotidiano. También ha dado espacio a nuevos talentos en sus programas, contribuyendo al crecimiento del medio digital.
+
+Curiosidades:
+- Estudió ingeniería antes de dedicarse por completo a los medios.
+- Fue pareja de Flor Vigna, con quien compartió varios proyectos.
+- LUZU TV fue uno de los primeros medios digitales en realizar transmisiones en vivo con producción televisiva.
+- Ha sido invitado a diversos programas y podcasts como referente joven.
+
+Redes sociales:
+- Instagram: https://www.instagram.com/nicoocchiato
+- YouTube: https://www.youtube.com/c/LuzuTV
+- Twitter: https://twitter.com/NicoOcchiato
+
+Artículo basado en información pública. BioWiki no tiene afiliación con Nico Occhiato.`;
+
+            const blob = new Blob([contenido.replace(/\n/g, "\r\n")], { type: "text/plain" });
+            const a = document.createElement("a");
+            a.href = URL.createObjectURL(blob);
+            a.download = "NicoOcchiato_BioWiki.txt";
+            a.click();
+        });
+    </script>
+
+    <footer>
+        <p>Artículo basado en información pública. BioWiki no tiene afiliación con Nico Occhiato.</p>
+    </footer>
+</body>
+</html>
